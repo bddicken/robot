@@ -20,6 +20,10 @@ public class MainActivity extends AppCompatActivity {
     int xCoord = 0;
     int yCoord = 0;
 
+    /**
+     * This is the onCreate function!
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,6 +42,10 @@ public class MainActivity extends AppCompatActivity {
         anim1X.setSpring(forceX);
     }
 
+    /**
+     * This function moves the robot to a random location.
+     * @param v
+     */
     public void startAnimation(View v) {
         anim1X.setStartValue(xCoord);
         anim1Y.setStartValue(yCoord);

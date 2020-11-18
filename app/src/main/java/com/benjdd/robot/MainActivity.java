@@ -26,7 +26,11 @@ public class MainActivity extends AppCompatActivity {
     SpringAnimation anim1Y2;
     int xCoord2 = 0;
     int yCoord2 = 0;
-
+  
+    /**
+     * This is the onCreate function!
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -56,6 +60,10 @@ public class MainActivity extends AppCompatActivity {
         anim1X2.setSpring(forceX2);
     }
 
+    /**
+     * This function moves the robot to a random location.
+     * @param v
+     */
     public void startAnimation(View v) {
         anim1X.setStartValue(xCoord);
         anim1Y.setStartValue(yCoord);
